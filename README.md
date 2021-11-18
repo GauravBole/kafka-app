@@ -19,6 +19,7 @@ bin/kafka-run-class.sh kafka.tools.GetOffsetShell --broker-list 172.18.0.2:6667 
 bin/kafka-topics.sh --zookeeper localhost:2181 --alter --topic randomdata --partitions 2 
 
 ``producer can select partitions of therir choice in topic where it want to publish message. But if we want we can send msg to perticular partaion``
+`` Consumer consume msg Round robin manaer``
 
 # get list of consumer group
 bin/kafka-consumer-groups.sh  --list --bootstrap-server 172.18.0.2:6667
